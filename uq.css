@@ -1,0 +1,474 @@
+body {
+	background-color: #fff;
+}
+
+.main-bg {
+    color: #444;
+}
+
+.slide-menu__item--nested {
+	text-transform: uppercase;
+}
+
+body.page--homepage .main-slideshow li.slide:after,
+.page--house .fotorama__stage:after {
+  background: none;
+}
+
+body.page--homepage #main-slideshow .carousel-title .container {
+  vertical-align: top;
+  padding-top: 100px;
+}
+
+.theme__header .desktop-menu .nav>.menu-item {
+  opacity: 0.9;
+   text-shadow: #000 1px 1px;
+}
+
+.theme__header .desktop-menu .nav .dropdown-menu .menu-item {
+text-shadow: none;
+}
+
+.theme__header #logo {
+text-shadow: #000 1px 1px;
+}
+
+header .logo-box {
+background-image: url(https://li5.cdbcdn.com/oh/364d6e27-8c07-4501-9d68-62af0811ccf0.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+    padding-left: 30px;
+    background-position-x: 10px;
+}
+
+header .sticky-menu-mobile .logo-mobile {
+background-image: url(https://li5.cdbcdn.com/oh/364d6e27-8c07-4501-9d68-62af0811ccf0.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position-y: 16px;
+    padding-left: 45px;
+    background-position-x: 10px;
+}
+
+body.page--homepage #main-slideshow .carousel,
+body.page--homepage #main-slideshow .carousel-title,
+body.page--homepage #main-slideshow li.slide  {
+  height: 70vh !important;
+}
+
+header #menu .nav .nav-secondary {
+    min-width: 225px;
+    width: inherit;
+    right: inherit;
+}
+
+header #menu .nav .nav-secondary>li a {
+	text-overflow: inherit;
+	overflow: inherit;
+}
+
+header #menu .nav .nav-secondary>li a:hover {
+    color: white;
+    background-color: #35b4e3;
+}
+
+.carousel-caption {
+  font-size: 20px;
+  line-height: 1.3;
+  text-shadow: none !important;
+  left: inherit;
+  background-color: rgba(0,0,0,.6);
+  display: block !important;
+}
+
+@media (max-width: 768px) {
+	.carousel-caption {
+		padding: 5px !important;
+		text-align: center !important;
+		font-size: 16px;
+	}
+}
+
+.carousel-caption a {
+  color: #35b4e3;
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(0,0,0,0);
+}
+
+.carousel-caption a:hover {
+  border-bottom-color: #35b4e3;
+}
+
+.page.page--house .house-header {
+	margin-top: 0;
+}
+
+.page.page--house .gallery-wrapper {
+	margin-left: -30px;
+	margin-right: -30px;
+    top: 10000px;
+    position: absolute;*/
+}
+
+.page.page--house .slideshow-container .gallery-wrapper {
+    position: inherit;
+	top: inherit;
+}
+
+.page.page--house .nav.nav-tabs.house-tabs>li a {
+    color: #444;
+}
+
+.subtle-box {
+	box-shadow: none;
+}
+
+@media (max-width: 767px) {
+	.subtle-box {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.page--house .content-header {
+	display: none;
+}
+
+.page.page--house .house-overview section {
+	font-size: 17px;
+	line-height: 27px;
+}
+
+.booking-datepicker:after, .booking-people:after {
+    top: 10px;
+    color: #888;
+    font-family: linearicon;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    speak: none;
+    font-variant: normal;
+}
+
+.page.page--house .booking-datepicker:after {
+    top: 7px;
+    text-transform: none;
+    position: absolute;
+    right: 23px;
+    z-index: 1;
+    content: "\e789";
+    font-size: 20px;
+    font-size: 1.4285714285714286rem;
+}
+
+.booking-people>select {
+    height: 41px;
+    padding: 9px 0 9px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    text-indent: 20px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.booking-people:after {
+    position: absolute;
+    left: 24px;
+    content: "\e723";
+    z-index: 1;
+    text-transform: none;
+    font-size: 20px;
+    font-size: 1.4285714285714286rem;
+}
+
+@media (max-width: 767px) {
+	.checkout .checkout-start .datepicker {
+		display: inline-block;
+	}
+	
+	.page--checkout .booking-datepicker:after {
+		display: inline-block;
+		padding-left: 7px;
+		vertical-align: middle;
+		position: static;
+	}	
+}
+
+.page--house .BookingSearch-desktop .sticky {
+	top: inherit !important;
+	position: inherit !important;
+	min-width: inital !important;
+}
+
+.page--house #booking-container {
+	background: #044358;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em; 
+	
+}
+
+.page--house #booking-container .booking-datepicker, 
+.page--house #booking-container .booking-people, 
+.page--house #booking-container button {
+	display: inline-block;
+	height: 40px;
+	margin-right: 10px;
+	position: relative;
+	margin-bottom: 0;
+	border-radius: 5px;
+}
+
+.page--house #booking-container .booking-datepicker input,
+.page--house #booking-container .booking-people select {
+	cursor: pointer;
+    height: 40px;
+}	
+
+:root .search-people select, _ :-ms-input-placeholder
+
+.page--house #booking-container .booking-datepicker input {
+    padding: 10px 10px 9px;
+}
+
+.page--house #booking-container .booking-people {
+	background: white;
+	border-radius: 5px;
+}
+
+.page--house #booking-container.sticky {
+    top: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.page--house #booking-container .booking-people:after {
+	left: 7px;
+}
+
+.page--house .fotorama__nav-wrap {
+	display: none;
+}
+
+.page--house .fotorama-caption {
+	bottom: 0;
+	position: absolute;
+	top: inherit !important;
+	bottom: 0;
+	right: 0;
+	padding: 5px 20px;
+	text-align: right;
+	background-color: rgba(0,0,0,.6);
+	color: white;
+	margin: 0;
+	font-size: 20px;
+	height: auto;
+	overflow: auto;
+    white-space: inherit;
+	margin-left: 0;
+	margin-right: 0;
+	line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+	.page--house .fotorama-caption {
+		padding: 5px 30px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.page.page--house .house-overview {
+	margin-top: 0;
+}
+
+.page.page--house .house-overview .subtle-box {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.page.page--house .house-overview ul.room-details-features li {
+	margin-right: 30px;
+}
+
+.view-more {
+	height: auto !important;
+}
+
+.view-more[data-readmore][aria-expanded=false]:after {
+	background: none;
+}
+
+.view-more-link {
+	display: none !important;
+}
+
+@media (min-width: 1200px) {
+	.page--checkout .booking-datepicker:after {
+		top: 7px;
+		text-transform: none;
+		position: absolute;
+		right: 23px;
+		z-index: 1;
+		content: "\e789";
+		font-size: 20px;
+		font-size: 1.4285714285714286rem;
+	}
+	.page--checkout .booking-datepicker input {
+		width: 130px;	
+	}
+	.page--checkout .booking-datepicker:after {
+		right: 7px;
+	}
+}
+
+@media (max-width: 992px) {
+	.page--checkout .booking-datepicker:after {
+		top: 7px;
+		text-transform: none;
+		position: absolute;
+		right: 23px;
+		z-index: 1;
+		content: "\e789";
+		font-size: 20px;
+		font-size: 1.4285714285714286rem;
+	}
+	.page--checkout .booking-datepicker input {
+		width: 130px;	
+	}
+	.page--checkout .booking-datepicker:after {
+		right: 7px;
+	}
+	
+	.page--house #booking-container {
+		height: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		background: none;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+	.page--checkout .booking-datepicker input {
+		min-width: 110px;
+	}
+	.page--checkout .col-sm-3.booking-datepicker {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+}
+
+.page--house #booking-container #widget-container {
+	margin-top: 0;
+}
+.page--house #booking-container .booking-search {
+    background: none;
+    min-height: inherit;
+	height: 40px;
+}
+.page--house #booking-container .booking-search .booking-search-content {
+	padding: 0;
+}
+
+
+.page--house #booking-container .booking-search .booking-search-content,
+.page--house #booking-container .booking-search .row, 
+.page--house #booking-container .booking-search .row .col-xs-12 {
+    display: inline-block;
+	width: inherit;
+}
+
+.page--house #booking-container .booking-search .booking-search-content .row:nth-child(1),
+.page--house #booking-container .booking-search .booking-search-content .row:nth-child(2) {
+	display: none;
+}
+
+.page--house #booking-container .booking-search .booking-search-content .row:nth-child(7) {
+	display: inline-block;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1.5em;
+	height: 40px;
+	padding-top: 4px;
+	vertical-align: top;
+}
+
+.page--house #booking-container .booking-search .booking-search-content .row:nth-child(7):after {
+    content: 'including refundable security deposit';
+    float: none;
+    clear: both;
+    display: block;
+    text-align: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.page--house .BookingSearch-mobile-price:after {
+    content: 'including refundable\A security deposit';
+    white-space: pre;
+    text-align: left;
+    float: left;
+    font-size: 9px;
+    line-height: 1.2;
+    margin-top: -2px;
+    padding-left: 1em;
+}
+
+@media (min-width: 480px) {
+	.page--house .BookingSearch-mobile-price:after {
+		content: 'including refundable security deposit';
+		margin-top: 0;
+		font-size: 11px;
+		padding-left: 0.5em;
+		margin-top: 2px;
+	}
+}
+
+.page--house .BookingSearch-mobile-price.hide-deposit:after {
+	display: none;
+}
+
+.page--house #booking-container .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1) {
+	text-align: right;
+}
+
+.page--house #booking-container .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(2) {
+	text-align: left;
+}
+
+.page--house .col-md-9.is-multi {
+    width: 100%;
+}
+
+.page--checkout .checkout .checkout-start .select-people {
+	width: 85px;
+}
+
+.page--checkout .side-nav .summary-row-title,
+.page--checkout .side-nav .summary-row-subtotal {
+	display: none;
+}
+
+.page--checkout .summary-sidebar hr.separator {
+	border-top: none;
+}
+
+.page--checkout .summary-sidebar .nav-pills {
+	display: none;
+}
+
+.page--checkout .summary-sidebar .sidebar-content .tab-content .tab-pane:nth-child(1) {
+	display: none;
+	visibility: hidden;
+}
+
+.page--checkout .summary-sidebar .sidebar-content .tab-content .tab-pane:nth-child(2) {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
