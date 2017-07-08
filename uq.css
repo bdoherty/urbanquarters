@@ -164,7 +164,7 @@ header #menu .nav .nav-secondary>li a:hover {
 
 .booking-people>select {
     height: 41px;
-    padding: 9px 0 9px 20px;
+    padding: 9px 0 9px 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
     position: relative;
@@ -172,6 +172,8 @@ header #menu .nav .nav-secondary>li a:hover {
     background-color: transparent;
     z-index: 100;
 }
+
+
 
 .booking-people:after {
     position: absolute;
@@ -226,8 +228,6 @@ header #menu .nav .nav-secondary>li a:hover {
 	cursor: pointer;
     height: 40px;
 }	
-
-:root .search-people select, _ :-ms-input-placeholder
 
 .page--house #booking-container .booking-datepicker input {
     padding: 10px 10px 9px;
