@@ -1,0 +1,13 @@
+.summary-sidebar .nav-pills {
+	display: none;
+}
+
+.summary-sidebar .sidebar-content .tab-content .tabpanel:nth-child(1) {
+	display: none;
+	visibility: hidden;
+}
+
+.summary-sidebar .sidebar-content .tab-content .tabpanel:nth-child(2) {
+    display: block;
+    visibility: visible;
+}
