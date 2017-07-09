@@ -225,6 +225,22 @@ body.page--homepage .testimonials {
     padding: 0;
 }
 
+@media screen and (max-width: 860px) {
+	body.page--homepage .testimonials-wrapper {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+    .testimonials .flex-direction-nav .flex-prev {
+        left: 0px;
+    }
+    .testimonials .flex-direction-nav .flex-next {
+        right: 0px;
+    }
+}
+
 body.page--homepage .testimonials .flex-direction-nav a {
     opacity: 1!important;
 }
