@@ -297,6 +297,10 @@ body.page--homepage .testimonials .testimonial-content {
         margin-left: 45px;
         margin-right: 45px;
     }
+
+    body.page--homepage .testimonials .testimonial-from {
+        text-align: center;
+    }
 }
 
 
