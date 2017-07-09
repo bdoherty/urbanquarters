@@ -202,6 +202,11 @@ h2, h3 {
     margin: 0;
     font-size: 64px;
 }
+@media screen and (max-width: 600px) {
+    .row h2 {
+        font-size: 36px;
+    }
+}
 
 .featuredproperties h2 {
 	color: white;
@@ -288,12 +293,8 @@ body.page--homepage .testimonials .testimonial-content {
 	text-align: justify;
 }
 
-@media screen and (max-width: 860px) {/*
-	body.page--homepage .testimonials-wrapper {
-		padding-left: 50px;
-		padding-right: 50px;
-	}*/
-    body.page--homepage .testimonials .testimonial-content {
+@media screen and (max-width: 860px) {
+	body.page--homepage .testimonials .testimonial-content {
         margin-left: 45px;
         margin-right: 45px;
     }
@@ -336,7 +337,7 @@ body.page--homepage .testimonials .testimonial-content .stars {
 	}
 		
 	body.page--homepage .testimonials .testimonial-content {	
-		font-size: 14pt;
+		font-size: 14px;
 	}
 	
 	body.page--homepage .testimonials .testimonial-content .stars {
