@@ -225,6 +225,33 @@ body.page--homepage .testimonials {
     padding: 0;
 }
 
+body.page--homepage .testimonials .flex-direction-nav a {
+    opacity: 1!important;
+}
+
+body.page--homepage .testimonials .flex-direction-nav a:before {
+    font-family: linearicon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 40px;
+    font-size: 2.857142857142857rem;
+    display: inline-block;
+    content: "\e93b";
+    color: #ddd;
+    text-shadow: 0 2px 2px rgba(0,0,0,.8);
+}
+
+body.page--homepage .testimonials .flex-direction-nav a.flex-next:before {
+    content: "\e93c";
+}
+
+
 body.page--homepage .testimonials .testimonial-content {
     border: 1px solid rgba(0,0,0,0.15);
     border-radius: 2px;
