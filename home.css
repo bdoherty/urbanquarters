@@ -108,7 +108,10 @@ h2, h3 {
 	text-align: center;
 }
 
-.search .search-datepicker, .search .search-location, .search .search-people, .search .search-submit {
+.search .search-datepicker, 
+.search .search-location, 
+.search .search-people, 
+.search .search-submit {
     float: inherit;
     display: inline-block;
 }
@@ -272,6 +275,7 @@ h2, h3 {
   display: none;
 }
 
+/*
 @media (min-width: 600px) {
 	#quote-carousel {
 		padding: 0 10px 30px 10px;
@@ -335,3 +339,4 @@ h2, h3 {
     float: left;
     margin-right: 10px;
 }
+*/
