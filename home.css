@@ -10,6 +10,10 @@ h2, h3 {
 .widget-row {margin-top: 0 !important; margin-bottom: 0; } 
 .widget-content { text-align: justify;}
 
+.main-bg {
+    overflow: hidden;
+}
+
 .main-bg > .row:nth-child(1),
 .main-bg > .row:nth-child(2) {
     background: #044358;
