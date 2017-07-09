@@ -229,13 +229,6 @@ body.page--homepage .testimonials {
     padding: 0;
 }
 
-@media screen and (max-width: 860px) {
-	body.page--homepage .testimonials-wrapper {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-}
-
 @media screen and (max-width: 992px) {
     .testimonials .flex-direction-nav .flex-prev {
         left: 0px;
@@ -294,6 +287,18 @@ body.page--homepage .testimonials .testimonial-content {
     line-height: 1.4;
 	text-align: justify;
 }
+
+@media screen and (max-width: 860px) {/*
+	body.page--homepage .testimonials-wrapper {
+		padding-left: 50px;
+		padding-right: 50px;
+	}*/
+    body.page--homepage .testimonials .testimonial-content {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
 
 body.page--homepage .testimonials .testimonial-content:before {
     position: absolute;
