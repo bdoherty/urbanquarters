@@ -294,6 +294,10 @@ body.page--homepage .testimonials .testimonial-content {
     font-size: 140%;
 }
 
+body.page--homepage .testimonials .testimonial-from {
+    line-height: 1.4;
+}
+
 @media screen and (max-width: 996px) {
 	body.page--homepage .testimonials .testimonial-content {
         margin-left: 45px;
