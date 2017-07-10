@@ -294,12 +294,13 @@ body.page--homepage .testimonials .testimonial-content {
     font-size: 140%;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 996px) {
 	body.page--homepage .testimonials .testimonial-content {
         margin-left: 45px;
         margin-right: 45px;
     }
-
+}
+@media screen and (max-width: 860px) {
     body.page--homepage .testimonials .testimonial-from {
         text-align: center;
     }
