@@ -7,9 +7,19 @@
 <script>
 domready(function() {
 	jQuery( "#testimonials-container" ).load( "https://rawgit.com/bdoherty/urbanquarters/master/home.html", function() {
-		var testimonials = jQuery('body.page--homepage .testimonials .testimonial-content')
-		testimonials.height('');
-		testimonials.height(testimonials.height() + 'px');
+
+ 		function setTestimonialHeight() {
+			var testimonials = jQuery('body.page--homepage .testimonials .testimonial-content')
+			testimonials.height('');
+			var max = 0;
+			testimonials.each(function() {
+				var h = jQuery(this).height();
+				max = Math.max(max, h);
+			}).height(max);
+	    }
+  
+    	jQuery(window).resize(setTestimonialHeight);
+		setTestimonialHeight();
 
 		jQuery('.testimonials-wrapper').flexslider({
 			selector: ".testimonials > li",
