@@ -7,6 +7,10 @@ h2, h3 {
 	text-align: center;
 } 
 
+#content {
+    overflow: hidden;
+}
+
 .widget-row {margin-top: 0 !important; margin-bottom: 0; } 
 .widget-content { text-align: justify;}
 
