@@ -225,7 +225,7 @@ h2, h3 {
 }
 
 body.page--homepage .testimonials {
-	font-size: 18px;
+	font-size: 18pt;
 	text-align: left;
     list-style: none;
     padding: 0;
@@ -282,10 +282,9 @@ body.page--homepage .testimonials .testimonial-content {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);	
     background-color: #fff;
 	position: relative;	
-    padding: 1em;
+    padding: 24px;
     margin: 2px;
-    margin-bottom: 1em;
-    font-size: 18pt;
+    margin-bottom: 24px;
     line-height: 1.4;
 	text-align: justify;
 }
@@ -330,16 +329,12 @@ body.page--homepage .testimonials .testimonial-content .stars {
 
 @media (max-width: 600px) {
 	body.page--homepage .testimonials {
-		font-size: 14px;
-	}
-		
-	body.page--homepage .testimonials .testimonial-content {	
-		font-size: 14px;
-	}
-	
-	body.page--homepage .testimonials .testimonial-content .stars {
 		font-size: 14pt;
-	}
+	}		
+
+    body.page--homepage .testimonials .testimonial-content .stars {
+        font-size: 14pt;
+    }
 }	
 
 
