@@ -6,18 +6,12 @@ body {
     color: #444;
 }
 
+.view-more[data-readmore][aria-expanded=false]:after {
+	background: none;
+}
+
 .slide-menu__item--nested {
 	text-transform: uppercase;
-}
-
-body.page--homepage .main-slideshow li.slide:after,
-.page--house .fotorama__stage:after {
-  background: none;
-}
-
-body.page--homepage #main-slideshow .carousel-title .container {
-  vertical-align: top;
-  padding-top: 100px;
 }
 
 .theme__header .desktop-menu .nav>.menu-item {
@@ -49,12 +43,6 @@ background-image: url(https://li5.cdbcdn.com/oh/364d6e27-8c07-4501-9d68-62af0811
     background-position-y: 16px;
     padding-left: 45px;
     background-position-x: 10px;
-}
-
-body.page--homepage #main-slideshow .carousel,
-body.page--homepage #main-slideshow .carousel-title,
-body.page--homepage #main-slideshow li.slide  {
-  height: 70vh !important;
 }
 
 header #menu .nav .nav-secondary {
@@ -246,6 +234,10 @@ header #menu .nav .nav-secondary>li a:hover {
 
 .page--house #booking-container .booking-people:after {
 	left: 7px;
+}
+
+.page--house .fotorama__stage:after {
+  background: none;
 }
 
 .page--house .fotorama__nav-wrap {
