@@ -291,7 +291,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 }
 
 .view-more[data-readmore][aria-expanded=false]:after {
-	background: none;
+	background: none !important;
 }
 
 .view-more-link {
