@@ -8,6 +8,12 @@ body.page--homepage .main-slideshow li.slide:after {
   background: none;
 }
 
+@media (max-width: 767px) {
+    body.page--homepage #main-slideshow .carousel-caption {
+        font-size: 16px;
+    }
+}
+
 body.page--homepage #main-slideshow .carousel-title .container {
   vertical-align: top;
   padding-top: 100px;
