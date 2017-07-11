@@ -8,7 +8,6 @@ domready(function() {
 				
 				if(jQuery('.page--house').length) {
 				
-					debugger;
 					if(window.isMobile) {
 
 						if(jQuery.Fotorama.instances.length) {
