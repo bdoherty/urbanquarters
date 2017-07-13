@@ -466,6 +466,14 @@ body.page--homepage #main-slideshow .carousel-caption {
     opacity: 1;
 }
 
+.page--house #contact-info-container {
+    display: none !important;
+}
+
+footer .footer-menu .nav-menu {
+	padding-left: 20px;
+}
+
 footer .footer-menu ul.nav-menu>li.menu-item {
     width: 100%;
 }
