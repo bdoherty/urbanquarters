@@ -77,6 +77,7 @@ domready(function() {
 		}
 	}
 	setTimeout(initPage,150);
+	/*
 	if(jQuery('.page--allproperties').length) {
 		(function($){
 			try {
@@ -91,5 +92,6 @@ domready(function() {
 				debugger;
 			}
 		})(jQuery);		
-	}
+	}*/
 });
+
