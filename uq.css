@@ -11,7 +11,7 @@ body {
 }
 
 .slide-menu__item--nested {
-	text-transform: uppercase;
+	text-transform: uppercase !important;
 }
 
 .theme__header .desktop-menu .nav>.menu-item {
