@@ -15,7 +15,13 @@ domready(function() {
 
 	jQuery(".featuredproperties .col-md-4").removeClass('col-md-4').addClass('col-md-6');	
 	jQuery(".main-bg > .row:nth-child(3) .col-md-2").addClass("col-sm-5 col-xs-5 col-md-4");
-	jQuery(window).on('resize visibilitychange', matchHeight);
+
+	var timer = null;
+	jQuery(window).on('resize visibilitychange', function() {
+		clearTimeout(timer);
+		timer = setTimeout(matchHeight, 15);
+	});
+	
 	setTimeout(matchHeight, 500);
 	matchHeight();
 });
