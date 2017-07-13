@@ -47,7 +47,7 @@ domready(function() {
 							jQuery.Fotorama.instances[0].startAutoplay();
 						}
 						reinitSlideshow();
-						jQuery(window).resize(reinitSlideshow);
+						jQuery(window).on('resize visibilitychange', reinitSlideshow);
 					}
 					
 					jQuery('#contact-info-container').detach();
