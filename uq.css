@@ -465,3 +465,7 @@ body.page--homepage #main-slideshow .carousel-caption {
     visibility: visible;
     opacity: 1;
 }
+
+footer .footer-menu ul.nav-menu>li.menu-item {
+    width: 100%;
+}
