@@ -120,7 +120,7 @@ domready(function() {
 						}
 						prices = {};
 						
-					}, 300);
+					}, 10);
 
 					return retval;
 				}
