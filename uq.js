@@ -109,7 +109,7 @@ domready(function() {
 								var c = (window.ldgfy.getCurrency() == 80) ? 1 : window.ldgfy.currency.getCurrency('NZD').conversion;
 								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
-										prices[x] - 800/params.e.conversion, 
+										prices[x] - 800/window.ldgfy.currency.getCurrency('NZD').conversion, 
 										params.e,
 										params.i,
 										params.n,
