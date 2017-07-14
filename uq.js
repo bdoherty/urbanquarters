@@ -78,6 +78,10 @@ domready(function() {
 	}
 	setTimeout(initPage,150);
 	if(jQuery('.page--allproperties').length) {
+		var prices = {};
+		var params = {};
+		var timer = null;
+
 		(function($){
 			try {
 				var __formatPrice = window.ldgfy.currency.formatPrice;
@@ -88,8 +92,22 @@ domready(function() {
 							&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0") {
 						arguments[0] -= 800/e.conversion;
 					}*/
+					var params = {
+						e: e,
+						i: i,
+						n: n,
+						s: s,
+						a: a
+					};
 					var retval = __formatPrice.apply(this,arguments);
+					prices[retval] = t;
 					console.log("window.ldgfy.currency.formatPrice(", t, e, i, n, s, a, ") returned ",retval);
+
+					clearTimeout(timer);
+					setTimeout(function() {
+						debugger;
+					}, 300);
+
 					return retval;
 				}
 			} catch (ex) {
