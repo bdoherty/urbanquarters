@@ -105,7 +105,12 @@ domready(function() {
 								&& jQuery('.advanced-search__app .alert-info').length == 0
 								&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0") {
 
+							for(var x in prices) {
+								
+								jQuery('span:contains("'+x+'")').val()
+							}
 
+							window.ldgfy.currency.getCurrency('NZD').conversion
 							//arguments[0] -= 800/e.conversion;
 						}
 						
