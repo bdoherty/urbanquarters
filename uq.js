@@ -85,7 +85,7 @@ domready(function() {
 		(function($){
 			try {
 				var __formatPrice = window.ldgfy.currency.formatPrice;
-				window.ldgfy.currency.formatPrice = function (t,e,i,n,s,a) {			
+				window.ldgfy.currency.formatPrice = function (t,e,i,n,s,a) {
 					var params = {
 						e: e,
 						i: i,
@@ -106,9 +106,10 @@ domready(function() {
 
 							for(var x in prices) {
 
+								var c = (window.ldgfy.getCurrency() == 80) ? 1 : window.ldgfy.currency.getCurrency('NZD').conversion;
 								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
-										prices[x] - 800/window.ldgfy.currency.getCurrency('NZD').conversion, 
+										prices[x] - 800/c, 
 										params.e,
 										params.i,
 										params.n,
