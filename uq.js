@@ -77,7 +77,7 @@ domready(function() {
 		}
 	}
 	setTimeout(initPage,150);
-	if(jQuery('.page--allproperties').length) {
+	if(jQuery('.page--allproperties').length  || jQuery('.page--house').length) {
 		var prices = {};
 		var params = {};
 		var timer = null;
