@@ -18,7 +18,15 @@ domready(function() {
 			}).height(max);
 	    }
   
-    	jQuery(window).resize(setTestimonialHeight);
+		var timer = null;
+		jQuery(window).on('resize', function() {
+			clearTimeout(timer);
+			timer = setTimeout(setTestimonialHeight, 15);
+		});
+		jQuery(window).on('visibilitychange', function() {
+			setTimeout(setTestimonialHeight, 150);
+			setTimeout(setTestimonialHeight, 1000);
+		});
 		setTestimonialHeight();
 
 		jQuery('.testimonials-wrapper').flexslider({

@@ -82,11 +82,13 @@ domready(function() {
 			try {
 				var __formatPrice = window.ldgfy.currency.formatPrice;
 				window.ldgfy.currency.formatPrice = function (t,e,i,n,s,a) {			
+					/*
 					if(jQuery('#datepicker-id2').val() != '' && jQuery('#datepicker-id3').val() != '' 
 							&& jQuery('.advanced-search__app .alert-info').length == 0
 							&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0") {
 						arguments[0] -= 800/e.conversion;
-					}
+					}*/
+					console.log(window.ldgfy.currency.formatPrice, t, e, i, n, s, a);
 					return __formatPrice.apply(this,arguments);
 				}
 			} catch (ex) {
