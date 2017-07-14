@@ -106,7 +106,7 @@ domready(function() {
 
 							for(var x in prices) {
 
-								jQuery('span:contains("'+x+'")').val(
+								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
 										prices[x] - 800/window.ldgfy.currency.getCurrency('NZD').conversion, 
 										params.e,
