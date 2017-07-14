@@ -98,21 +98,27 @@ domready(function() {
 					console.log("window.ldgfy.currency.formatPrice(", t, e, i, n, s, a, ") returned ",retval);
 
 					clearTimeout(timer);
-					setTimeout(function() {
-						debugger;
+					timer = setTimeout(function() {
 
 						if(jQuery('#datepicker-id2').val() != '' && jQuery('#datepicker-id3').val() != '' 
 								&& jQuery('.advanced-search__app .alert-info').length == 0
 								&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0") {
 
 							for(var x in prices) {
-								
-								jQuery('span:contains("'+x+'")').val()
-							}
 
-							window.ldgfy.currency.getCurrency('NZD').conversion
-							//arguments[0] -= 800/e.conversion;
+								jQuery('span:contains("'+x+'")').val(
+									window.ldgfy.currency.formatPrice(
+										prices[x] - 800/window.ldgfy.currency.getCurrency('NZD').conversion, 
+										params.e,
+										params.i,
+										params.n,
+										params.s,
+										params.a
+									)
+								);
+							}
 						}
+						prices = {};
 						
 					}, 300);
 
