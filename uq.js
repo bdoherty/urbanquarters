@@ -1,12 +1,12 @@
 domready(function() {
 	function initPage() {
 		try {
-			if(jQuery('#input_arrival').length || jQuery('input[name="Arrival"]').length) {
+			if(jQuery('#input_arrival').length) {
 				jQuery('#input_arrival').attr("placeholder", "ARRIVAL").parent().addClass('booking-datepicker');
 				jQuery('#input_departure').attr("placeholder", "DEPARTURE").parent().addClass('booking-datepicker');
 				jQuery('.select-people').parent().addClass('booking-people');	
 				
-				if(jQuery('.fotorama').length) {
+				if(jQuery('.page--house').length) {
 				
 					if(window.isMobile) {
 
