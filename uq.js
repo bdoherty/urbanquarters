@@ -6,7 +6,7 @@ domready(function() {
 				jQuery('#input_departure').attr("placeholder", "DEPARTURE").parent().addClass('booking-datepicker');
 				jQuery('.select-people').parent().addClass('booking-people');	
 				
-				if(jQuery('.page--house').length) {
+				if(jQuery('.fotorama').length) {
 				
 					if(window.isMobile) {
 
@@ -14,7 +14,7 @@ domready(function() {
 							jQuery.Fotorama.instances[0].destroy();
 						}
 
-							var galleryRow = jQuery('.gallery-wrapper').parentsUntil('.row');
+						var galleryRow = jQuery('.gallery-wrapper').parentsUntil('.row');
 						galleryRow.clone().prependTo(".col-md-9.is-multi").addClass('slideshow-container');
 						galleryRow.remove();
 						
