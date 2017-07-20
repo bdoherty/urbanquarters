@@ -1,6 +1,10 @@
 domready(function() {
 	function initPage() {
 		try {
+			jQuery('.logo-box').each(function() { 
+				jQuery(this).replaceWith( jQuery('<a class="logo-box" href="/" />').html( this.innerHTML ) ); 
+			})
+
 			if(jQuery('#input_arrival').length) {
 				jQuery('#input_arrival').attr("placeholder", "ARRIVAL").parent().addClass('booking-datepicker');
 				jQuery('#input_departure').attr("placeholder", "DEPARTURE").parent().addClass('booking-datepicker');
