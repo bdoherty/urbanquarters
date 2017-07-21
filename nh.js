@@ -10,8 +10,8 @@ domready(function() {
 		});
 		for (row in rows) {
             var max = 0;
-            for(var r = 0; r < row.length; r++) {
-                max = Math.max(jQuery(row[r]).height(), max);
+            for(var r = 0; r < rows[row].length; r++) {
+                max = Math.max(jQuery(rows[row][r]).height(), max);
             }
 			jQuery(rows[row]).height(max+'px');
 		}
