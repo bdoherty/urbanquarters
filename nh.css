@@ -1,15 +1,47 @@
+h1, h2, h3 { 
+	text-align: center;
+} 
+
+.main-bg > .row {
+	margin-top: 0;
+	margin-bottom: 0;
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;	
+}
+
+.main-bg > .row:nth-child(4),
+.main-bg > .row:nth-child(7) {
+	border-spacing: 2em 0.5em;
+	background: url(//li3.cdbcdn.com/oh/22e289ad-2b71-4296-9e7f-05cbe9bf087e.png);
+	text-align: center;
+}
+
+
 .main-bg > .row:nth-child(2), 
-.main-bg > .row:nth-child(3),
-.search .search-container {
-	color: #fff;
+.main-bg > .row:nth-child(3) {
 	background: #044358;
 	text-align: center;
 	margin-bottom: 0;
 	margin-top: 0;
 }
 
+.main-bg > .row:nth-child(2) h2 {
+	font-size: 30px;
+	color: white;
+}
+
+
+.main-bg > .row:nth-child(3) .search .search-container {
+    background: inherit;
+    padding: 0.4em;
+    margin: 0.4em;
+}
+
 .main-bg > .row:nth-child(4):before, 
-.main-bg > .row:nth-child(5):before {
+.main-bg > .row:nth-child(5):before,
+.main-bg > .row:nth-child(7):before {
     width: 0;
     height: 0;
     border-style: solid;
@@ -20,10 +52,57 @@
     margin-right: auto;
 }
 
-.main-bg > .row:nth-child(4) {
+.main-bg > .row:nth-child(5) {
+    background: #0788b3;
+    margin-bottom: -30px;
+}
+.main-bg > .row:nth-child(6) {
     background: #0788b3;
     padding-bottom: 1.5em;
 }
+
+.main-bg > .row:nth-child(5) h1 {
+	color: #fff;
+	font-size: 64px;
+	margin: 0;
+}
+
+.main-bg > .row:nth-child(4):before {
+	border-top-color: #044358;
+}
+.main-bg > .row:nth-child(7):before {
+	border-top-color: #0788b3;
+}
+
+.main-bg > .row:nth-child(4) .icon {
+  display: inline-block; 
+  font-size: 40pt;
+}
+
+.main-bg > .row:nth-child(4) h3 {
+	margin-top: 5px;
+}
+
+.main-bg > .row:nth-child(4) [class*="col-"] {
+    border: 1px solid rgba(0,0,0,0.15);
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	margin: 2em;
+}
+
+.main-bg > .row:nth-child(4) [class*="col-"] .widget-content {
+    padding: 1em !important;
+    padding-top: 0 !important;
+    padding-bottom: 5px !important;
+	text-align: center;
+    margin-top: 1em;
+}
+
+.main-bg > .row:nth-child(4) [class*="col-"] .widget-content p {
+	text-align: justify;
+}
+
 
 .featuredproperties {
 	padding: 0;
