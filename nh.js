@@ -9,7 +9,11 @@ domready(function() {
 			rows[Math.floor(jQuery(el).offset().top)].push(el);
 		});
 		for (row in rows) {
-			jQuery(rows[row]).height(jQuery(rows[row]).height()+'px');
+            var max = 0;
+            for(var r = 0; r < row.length; r++) {
+                max = Math.max(jQuery(row[r]).height(), max);
+            }
+			jQuery(rows[row]).height(max+'px');
 		}
 	}
 
