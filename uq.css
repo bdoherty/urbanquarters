@@ -102,6 +102,11 @@ body.page--homepage #main-slideshow .carousel-caption {
     position: absolute;
 }
 
+.page.page-search--hidden .slideshow-container,
+.page.page--house .slideshow-container {
+	padding: 0;
+}
+
 .page.page-search--hidden .slideshow-container .gallery-wrapper,
 .page.page--house .slideshow-container .gallery-wrapper {
     position: inherit;

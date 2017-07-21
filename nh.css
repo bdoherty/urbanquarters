@@ -4,12 +4,17 @@ h1, h2, h3 {
 
 .main-bg > .row {
 	margin-top: 0;
-	margin-bottom: 0;
-    margin-left: -9999px;
-    margin-right: -9999px;
-    padding-left: 9999px;
-    padding-right: 9999px;	
+	margin-bottom: -1px;
+	margin-left: -9999px;
+	margin-right: -9999px;
+	padding-left: 9999px;
+	padding-right: 9999px;
 }
+
+.main-bg > .row:nth-child(1) {
+	margin-bottom: -1px;
+}
+
 
 .main-bg > .row:nth-child(4),
 .main-bg > .row:nth-child(7) {
@@ -206,4 +211,3 @@ h1, h2, h3 {
 .featuredproperties .featured .place {
   display: none;
 }
-
