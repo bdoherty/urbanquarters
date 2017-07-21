@@ -89,17 +89,20 @@ body.page--homepage #main-slideshow .carousel-caption {
   border-bottom-color: #35b4e3;
 }
 
+.page.page-search--hidden .house-header,
 .page.page--house .house-header {
 	margin-top: 0;
 }
 
+.page.page-search--hidden .gallery-wrapperw
 .page.page--house .gallery-wrapper {
 	margin-left: -30px;
 	margin-right: -30px;
     top: 10000px;
-    position: absolute;*/
+    position: absolute;
 }
 
+.page.page-search--hidden .slideshow-container .gallery-wrapper,
 .page.page--house .slideshow-container .gallery-wrapper {
     position: inherit;
 	top: inherit;
@@ -477,3 +480,10 @@ footer .footer-menu .nav-menu {
 footer .footer-menu ul.nav-menu>li.menu-item {
     width: 100%;
 }
+
+/****************************************/
+
+.page.page-search--hidden header+#content {
+	padding: 0 !important;	
+}
+
