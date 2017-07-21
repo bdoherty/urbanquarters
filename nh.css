@@ -16,7 +16,7 @@ h1, h2, h3 {
 }
 
 .main-bg > .row:nth-child(1) {
-	margin-bottom: -1px;
+	margin-bottom: calc(-1em + 3px);
 }
 
 .main-bg > .row:nth-child(1) h2 {
