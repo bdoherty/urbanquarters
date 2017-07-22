@@ -37,9 +37,9 @@ domready(function() {
                     jQuery.Fotorama.instances[0].destroy();
                 }
 
-                var galleryRow = jQuery('.gallery-wrapper').parentsUntil('.row');
-                galleryRow.clone().prependTo(".col-md-9.is-multi").addClass('slideshow-container');
-                galleryRow.remove();
+                jQuery('.gallery-wrapper').parentsUntil('.row').addClass('slideshow-container');
+                //galleryRow.clone().prependTo(".col-md-9.is-multi").addClass('slideshow-container');
+                //galleryRow.remove();
                 
                 jQuery('.fotorama').fotorama({
                     height: '60%', 
