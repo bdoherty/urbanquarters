@@ -6,11 +6,6 @@ h1, h2, h3 {
 	text-align: center;
 }
 
-.main-bg {
-	padding: 0;
-}
-
-
 .main-bg > .row {
 	margin-top: 0;
 	margin-bottom: -1px;
