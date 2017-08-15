@@ -409,6 +409,7 @@ body.page--homepage #main-slideshow .carousel-caption {
     width: 100%;
 }
 
+
 .page--house .BookingSearch-mobile-price:after {
     content: 'plus refundable\A security deposit';
     white-space: pre;
@@ -432,6 +433,10 @@ body.page--homepage #main-slideshow .carousel-caption {
 
 .page--house .BookingSearch-mobile-price.hide-deposit:after {
 	display: none;
+}
+
+.page--house #booking-container .booking-search .booking-search-content .row:nth-child(1) {
+    display: none;
 }
 
 .page--house #booking-container .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1) {
@@ -491,4 +496,3 @@ footer .footer-menu ul.nav-menu>li.menu-item {
 .page.page-search--hidden header+#content {
 	padding: 0 !important;	
 }
-
