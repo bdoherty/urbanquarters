@@ -435,11 +435,11 @@ body.page--homepage #main-slideshow .carousel-caption {
 	display: none;
 }
 
-.page--house #booking-container .booking-search .booking-search-content .row:nth-child(1) {
+.page--house .booking-search .booking-search-content .row:nth-child(1) {
     display: none;
 }
 
-.page--house #booking-container .booking-search .booking-search-content .row:nth-child(2) hr {
+.page--house .booking-search .booking-search-content .row:nth-child(2) hr {
     border-color: transparent;
 }
 
