@@ -106,11 +106,11 @@ domready(function() {
 
 						if(jQuery('#datepicker-id2').val() != '' && jQuery('#datepicker-id3').val() != '' 
 								&& jQuery('.advanced-search__app .alert-info').length == 0
-								&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0"
-								&& jQuery('.BookingSearch-mobile .BookingSearch-mobile-price').length == 0) {
+								&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0") {
 
 							for(var x in prices) {
 
+								var x = jQuery('span.CurrencyText:contains("'+x+'")').attr('class');
 								console.log(x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
 								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
