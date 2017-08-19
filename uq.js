@@ -111,7 +111,7 @@ domready(function() {
 							for(var x in prices) {
 
 								var c = jQuery('span.CurrencyText:contains("'+x+'")').parent().attr('class');
-
+								console.log('class: ' + c + ' ' + x);
 								console.log(x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
 								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
