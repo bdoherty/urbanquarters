@@ -103,16 +103,19 @@ domready(function() {
 
 					clearTimeout(timer);
 					timer = setTimeout(function() {
-
+/*
 						if(jQuery('#datepicker-id2').val() != '' && jQuery('#datepicker-id3').val() != '' 
 								&& jQuery('.advanced-search__app .alert-info').length == 0
 								&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0") {
 
 							for(var x in prices) {
+*/
+						for(var x in prices) {
+							var parent = jQuery('span.CurrencyText:contains("'+x+'")').parent();
 
-								var c = jQuery('span.CurrencyText:contains("'+x+'")').parent().attr('class');
-								console.log('class: ' + c + ' ' + x);
-								console.log(x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
+							if(!parent.hasClass('PropertyPrices')) {
+								console.log('class: ' + c + ' ' + x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
+								//console.log(x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
 								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
 										prices[x] - 800/ (params.n ? 1 : window.ldgfy.currency.getCurrency('NZD').conversion), 
