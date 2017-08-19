@@ -114,7 +114,7 @@ domready(function() {
 							var parent = jQuery('span.CurrencyText:contains("'+x+'")').parent();
 
 							if(!parent.hasClass('PropertyPrices')) {
-								console.log('class: ' + c + ' ' + x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
+								console.log('class: ' + parent.attr('class') + ' ' + x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
 								//console.log(x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
 								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
