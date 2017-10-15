@@ -48,7 +48,7 @@ domready(function() {
 								nav: false,
 								loop: true
 							});
-							//jQuery.Fotorama.instances[0].startAutoplay();
+							jQuery.Fotorama.instances[0].startAutoplay();
 						}
 						reinitSlideshow();
 						var timer = null;
@@ -81,6 +81,7 @@ domready(function() {
 		}
 	}
 	setTimeout(initPage,150);
+	jQuery(window).on('hashchange', initPage);
 	if(jQuery('.page--allproperties').length  || jQuery('.page--house').length) {
 		var prices = {};
 		var params = {};
