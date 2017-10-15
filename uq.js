@@ -48,7 +48,7 @@ domready(function() {
 								nav: false,
 								loop: true
 							});
-							jQuery.Fotorama.instances[0].startAutoplay();
+							//jQuery.Fotorama.instances[0].startAutoplay();
 						}
 						reinitSlideshow();
 						var timer = null;
