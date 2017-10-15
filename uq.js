@@ -10,7 +10,7 @@ domready(function() {
 				jQuery('#input_departure').attr("placeholder", "DEPARTURE").parent().addClass('booking-datepicker');
 				jQuery('.select-people').parent().addClass('booking-people');	
 				
-				if(jQuery('.page--house').length) {
+				if(jQuery('.page--house').length && (window.location.hash == '' || window.location.hash == '#Overview')) {
 				
 					if(window.isMobile) {
 
