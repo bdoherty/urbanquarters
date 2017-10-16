@@ -13,7 +13,7 @@ domready(function() {
 				
 				if(window.location != '') {
 					jQuery(window).on('hashchange', function() {						
-						if(!slideshowLoaded && window.location.hash == '#Overview') {
+						if(!slideshowLoaded && window.location.hash == '#Overview' && !window.isMobile) {
 							window.location = '';
 						}
 					});	
