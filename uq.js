@@ -11,16 +11,8 @@ domready(function() {
 				jQuery('#input_departure').attr("placeholder", "DEPARTURE").parent().addClass('booking-datepicker');
 				jQuery('.select-people').parent().addClass('booking-people');	
 				
-				if(window.location != '') {
-					jQuery(window).on('hashchange', function() {						
-						if(!slideshowLoaded && window.location.hash == '#Overview' && !window.isMobile) {
-							window.location = '';
-						}
-					});	
-				}
-			
-				if(jQuery('.page--house').length && (window.location.hash == '' || window.location.hash == '#Overview')) {
-					slideshowLoaded = true;
+				
+				if(jQuery('.page--house').length) {
 
 					if(window.isMobile) {
 
@@ -39,8 +31,10 @@ domready(function() {
 							loop: true
 						});
 						
-					} else {
+					} else if (window.location.hash == '' || window.location.hash == '#Overview') {
 						
+						slideshowLoaded = true;
+
 						var galleryRow = jQuery('.gallery-wrapper').parentsUntil('.row');
 						galleryRow.prependTo("#content").addClass('slideshow-container');
 					
@@ -67,6 +61,12 @@ domready(function() {
 							clearTimeout(timer);
 							timer = setTimeout(reinitSlideshow, 15);
 						});
+					} else {
+						jQuery(window).on('hashchange', function() {						
+							if(!slideshowLoaded && window.location.hash == '#Overview' && !window.isMobile) {
+								window.location = '';
+							}
+						});	
 					}
 					
 					jQuery('#contact-info-container').detach();
