@@ -81,11 +81,13 @@ domready(function() {
 		}
 	}
 	setTimeout(initPage,150);
-	jQuery(window).on('hashchange', function() {
-		if(window.location.hash == '#Overview') {
-			window.location = '';
-		}
-	});
+	if(window.location != '') {
+		jQuery(window).on('hashchange', function() {
+			if(window.location.hash == '#Overview') {
+				window.location = '';
+			}
+		});	
+	}
 	if(jQuery('.page--allproperties').length  || jQuery('.page--house').length) {
 		var prices = {};
 		var params = {};
