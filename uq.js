@@ -1,3 +1,4 @@
+var slideshowLoaded = false;
 domready(function() {
 	function initPage() {
 		try {
@@ -10,8 +11,17 @@ domready(function() {
 				jQuery('#input_departure').attr("placeholder", "DEPARTURE").parent().addClass('booking-datepicker');
 				jQuery('.select-people').parent().addClass('booking-people');	
 				
+				if(window.location != '') {
+					jQuery(window).on('hashchange', function() {						
+						if(!slideshowLoaded && window.location.hash == '#Overview') {
+							window.location = '';
+						}
+					});	
+				}
+			
 				if(jQuery('.page--house').length && (window.location.hash == '' || window.location.hash == '#Overview')) {
-				
+					slideshowLoaded = true;
+
 					if(window.isMobile) {
 
 						if(jQuery.Fotorama.instances.length) {
@@ -28,6 +38,7 @@ domready(function() {
 							nav: false,
 							loop: true
 						});
+						
 					} else {
 						
 						var galleryRow = jQuery('.gallery-wrapper').parentsUntil('.row');
@@ -81,13 +92,6 @@ domready(function() {
 		}
 	}
 	setTimeout(initPage,150);
-	if(window.location != '') {
-		jQuery(window).on('hashchange', function() {
-			if(window.location.hash == '#Overview') {
-				window.location = '';
-			}
-		});	
-	}
 	if(jQuery('.page--allproperties').length  || jQuery('.page--house').length) {
 		var prices = {};
 		var params = {};
