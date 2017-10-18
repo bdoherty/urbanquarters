@@ -381,6 +381,11 @@ body.page--homepage #main-slideshow .carousel-caption {
 .page--house #booking-container .booking-search .row .col-xs-12 {
     display: inline-block;
 	width: inherit;
+	vertical-align: top;
+}
+
+.page--house #booking-container .booking-search .booking-search-content-title {
+	display: none !important;
 }
 
 .page--house #booking-container .booking-search .booking-search-content .row:nth-child(1) {
