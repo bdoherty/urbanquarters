@@ -388,6 +388,11 @@ body.page--homepage #main-slideshow .carousel-caption {
 	display: none !important;
 }
 
+.page--house #booking-container .booking-search .text-danger {
+	font-weight: 600;
+	line-height: 3;
+}
+
 .page--house #booking-container .booking-search .booking-search-content .row:nth-child(1) {
 	color: white;
 }
