@@ -3,7 +3,7 @@ domready(function() {
 	function initPage() {
 		try {
 			jQuery('.logo-box').each(function() { 
-				jQuery(this).replaceWith( jQuery('<a class="logo-box" href="/" />').html( this.innerHTML ) ); 
+				jQuery(this).replaceWith( jQuery('<a class="logo-box" href="https://www.urbanquarters.co.nz/" />').html( this.innerHTML ) ); 
 			})
 
 			if(jQuery('#input_arrival').length) {
