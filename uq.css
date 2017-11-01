@@ -411,7 +411,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 }
 
 .page--house #booking-container .booking-search .booking-search-content .row:nth-child(7):after {
-    content: 'plus refundable security deposit';
+    content: 'plus $800 refundable security deposit';
     float: none;
     clear: both;
     display: block;
@@ -425,7 +425,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 
 
 .page--house .BookingSearch-mobile-price:after {
-    content: 'plus refundable\A security deposit';
+    content: 'plus $800 refundable\A security deposit';
     white-space: pre;
     text-align: left;
     float: left;
