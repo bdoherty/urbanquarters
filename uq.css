@@ -455,15 +455,15 @@ body.page--homepage #main-slideshow .carousel-caption {
     display: block;
 }
 
-.booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1) {
+.booking-search .modal-body .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1) {
     width: 67%;
 }
 
-.booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(2) {
+.booking-search .modal-body .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(2) {
     width: 33%;
 }
 
-.page--house .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1):after {
+.page--house .modal-body .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1):after {
     content: "plus $800 refundable security deposit";
     font-size: 12px;
     color: #444;
