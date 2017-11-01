@@ -23,5 +23,8 @@ domready(function() {
 	});
 	
 	setTimeout(matchHeight, 500);
+	setTimeout(matchHeight, 1000);
+	setTimeout(matchHeight, 2500);
+	setTimeout(matchHeight, 5000);
 	matchHeight();
 });
