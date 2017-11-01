@@ -432,7 +432,8 @@ body.page--homepage #main-slideshow .carousel-caption {
     font-size: 9px;
     line-height: 1.2;
     margin-top: -2px;
-    padding-left: 1em;
+	padding-left: 1em;
+	color: green;
 }
 
 @media (min-width: 480px) {
@@ -442,7 +443,16 @@ body.page--homepage #main-slideshow .carousel-caption {
 		font-size: 11px;
 		padding-left: 0.5em;
 		margin-top: 2px;
+		color: pink;
 	}
+}
+
+.page--house .BookingSearch-mobile .BookingSearch-mobile-price:after {
+    content: "plus $800 refundable \Asecurity deposit";
+    font-size: 9px;
+    color: #444;
+    font-weight: normal;
+    display: block;
 }
 
 .page--checkout .mobile-sidebar .CurrencyText:after {
