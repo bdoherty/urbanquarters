@@ -261,7 +261,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 	top: inherit !important;
 	bottom: 0;
 	right: 0;
-	padding: 5px 20px;
+	padding: 5px 50px 5px 20px;
 	text-align: right;
 	background-color: rgba(0,0,0,.6);
 	color: white;
@@ -437,12 +437,20 @@ body.page--homepage #main-slideshow .carousel-caption {
 
 @media (min-width: 480px) {
 	.page--house .BookingSearch-mobile-price:after {
-		content: 'plus refundable security deposit';
+		content: 'plus $800 refundable security deposit';
 		margin-top: 0;
 		font-size: 11px;
 		padding-left: 0.5em;
 		margin-top: 2px;
 	}
+}
+
+.page--checkout .mobile-sidebar .CurrencyText:after {
+    content: " including $800 refundable security deposit";
+    font-size: 70%;
+    color: #444;
+    font-weight: normal;
+    display: block;
 }
 
 .page--house .BookingSearch-mobile-price.hide-deposit:after {
