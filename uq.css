@@ -411,7 +411,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 }
 
 .page--house #booking-container .booking-search .booking-search-content .row:nth-child(7):after {
-    content: 'plus $800 refundable security deposit {414}';
+    content: 'including $800 refundable security deposit {414}';
     float: none;
     clear: both;
     display: block;
