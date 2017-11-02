@@ -124,7 +124,8 @@ domready(function() {
 						for(var x in prices) {
 							var parent = jQuery('span.CurrencyText:contains("'+x+'")').parent();
 
-							if(!parent.hasClass('PropertyPrices') && (jQuery('.search-datepicker input.hasDatepicker').length == 0 || jQuery('.search-datepicker input.hasDatepicker')[0].value != '')) {
+							if(!parent.hasClass('PropertyPrices') && (jQuery('.search-datepicker input.hasDatepicker').length == 0 || jQuery('.search-datepicker input.hasDatepicker')[0].value != '')
+									&& jQuery(":contains('No results found matching your search criteria. Showing all properties instead.')").length == 0) {
 								console.log('class: ' + parent.attr('class') + ' ' + x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
 								//console.log(x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
 								jQuery('span:contains("'+x+'")').text(
