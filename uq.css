@@ -494,6 +494,17 @@ body.page--homepage #main-slideshow .carousel-caption {
     width: 100%;
 }
 
+.page--checkout .room-selection .room-price:after {
+	content: 'including $800 refundable\A security deposit {498}';
+	white-space: pre;
+	text-align: left;
+	float: left;
+	font-size: 9px;
+	line-height: 1.2;
+	margin-top: -2px;
+	padding-left: 1em;
+}
+
 .page--checkout .checkout .checkout-start .select-people {
 	width: 85px;
 }
