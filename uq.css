@@ -453,11 +453,11 @@ body.page--homepage #main-slideshow .carousel-caption {
 	}
 }
 
-.booking-search .modal-body .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1) {
+.page--house .modal-body .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1) {
     width: 67%;
 }
 
-.booking-search .modal-body .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(2) {
+.page--house .modal-body .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(2) {
     width: 33%;
 }
 
@@ -466,7 +466,6 @@ body.page--homepage #main-slideshow .carousel-caption {
     font-size: 12px;
     color: #444;
     font-weight: normal;
-    display: block;	
 }
 
 .page--checkout .mobile-sidebar .CurrencyText:after {
