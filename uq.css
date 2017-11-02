@@ -462,8 +462,8 @@ body.page--homepage #main-slideshow .carousel-caption {
 }
 
 .page--house .modal-body .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1):after {
-    content: " plus $800 refundable security deposit {467}";
-    font-size: 12px;
+    content: " including $800 refundable security deposit {467}";
+    font-size: 10px;
     color: #444;
     font-weight: normal;
 }
