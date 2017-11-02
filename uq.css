@@ -425,7 +425,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 
 
 .page--house .BookingSearch-mobile-price:after {
-    content: ' including $800 refundable\A security deposit {428}';
+    content: 'including $800 refundable\A security deposit {428}';
     white-space: pre;
     text-align: left;
     float: left;
