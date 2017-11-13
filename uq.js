@@ -92,6 +92,7 @@ domready(function() {
 		}
 	}
 	setTimeout(initPage,150);
+/*	
 	if(jQuery('.page--allproperties').length  || jQuery('.page--house').length) {
 		var prices = {};
 		var params = {};
@@ -114,20 +115,14 @@ domready(function() {
 
 					clearTimeout(timer);
 					timer = setTimeout(function() {
-/*
-						if(jQuery('#datepicker-id2').val() != '' && jQuery('#datepicker-id3').val() != '' 
-								&& jQuery('.advanced-search__app .alert-info').length == 0
-								&& jQuery('.results-header__total-viewing').html() != "We found <strong>0</strong> results, viewing 0") {
 
-							for(var x in prices) {
-*/
 						for(var x in prices) {
 							var parent = jQuery('span.CurrencyText:contains("'+x+'")').parent();
 
 							if(!parent.hasClass('PropertyPrices') && (jQuery('.search-datepicker input.hasDatepicker').length == 0 || jQuery('.search-datepicker input.hasDatepicker')[0].value != '')
 									&& jQuery(":contains('No results found matching your search criteria. Showing all properties instead.')").length == 0) {
 								console.log('class: ' + parent.attr('class') + ' ' + x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
-								//console.log(x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
+
 								jQuery('span:contains("'+x+'")').text(
 									__formatPrice(
 										prices[x] - 800/ (params.n ? 1 : window.ldgfy.currency.getCurrency('NZD').conversion), 
@@ -150,6 +145,6 @@ domready(function() {
 				debugger;
 			}
 		})(jQuery);		
-	}
+	}*/
 });
 
