@@ -411,7 +411,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 }
 
 .page--house #booking-container .booking-search .booking-search-content .row:nth-child(7):after {
-    content: 'including $800 refundable security deposit';
+    content: 'plus $800 refundable security deposit';
     float: none;
     clear: both;
     display: block;
@@ -425,7 +425,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 
 
 .page--house .BookingSearch-mobile-price:after {
-    content: 'including $800 refundable\A security deposit';
+    content: 'plus $800 refundable\A security deposit';
     white-space: pre;
     text-align: left;
     float: left;
@@ -462,14 +462,14 @@ body.page--homepage #main-slideshow .carousel-caption {
 }
 
 .page--house .modal-body .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1):after {
-    content: " including $800 refundable security deposit";
+    content: " plus $800 refundable security deposit";
     font-size: 10px;
     color: #444;
     font-weight: normal;
 }
 
 .page--checkout .mobile-sidebar .CurrencyText:after {
-    content: " including $800 refundable security deposit";
+    content: " plus $800 refundable security deposit";
     font-size: 12px;
     color: #444;
     font-weight: normal;
@@ -495,7 +495,7 @@ body.page--homepage #main-slideshow .carousel-caption {
 }
 
 .page--checkout .room-selection .room-price:after {
-	content: 'including $800 refundable\A security deposit';
+	content: 'plus $800 refundable\A security deposit';
 	white-space: pre;
 	text-align: left;
 	float: left;
