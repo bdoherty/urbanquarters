@@ -453,6 +453,10 @@ body.page--homepage #main-slideshow .carousel-caption {
 	}
 }
 
+.booking-search .booking-search-content .booking-search-content-title {
+	visibility: hidden;
+}
+
 .page--house .modal-body .booking-search .booking-search-content .row:nth-child(7) .col-xs-6:nth-child(1) {
     width: 67%;
 }
