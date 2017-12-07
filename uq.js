@@ -141,7 +141,7 @@ domready(function() {
 					return retval;
 				}
 
-				jQuery('.page.page--house .house-subheader .property-address').text(jQuery("meta[name='description']").attr('content').replace(' Auckland New Zealand, Auckland', '.'));
+				jQuery('.page.page--house .house-subheader .property-address').text(jQuery("meta[name='description']").attr('content').replace(' Auckland New Zealand, Auckland', ''));
 				
 			} catch (ex) {
 				debugger;
