@@ -118,7 +118,6 @@ domready(function() {
 
 						for(var x in prices) {
 							var parent = jQuery('span.CurrencyText:contains("'+x+'")').parent();
-
 							if(!parent.hasClass('PropertyPrices') && (jQuery('.search-datepicker input.hasDatepicker').length == 0 || jQuery('.search-datepicker input.hasDatepicker')[0].value != '')
 									&& jQuery("span:contains('No results found matching your search criteria. Showing all properties instead.')").length == 0) {
 								console.log('class: ' + parent.attr('class') + ' ' + x, prices[x], 800/window.ldgfy.currency.getCurrency('NZD').conversion, params);
@@ -141,9 +140,13 @@ domready(function() {
 
 					return retval;
 				}
+
+				jQuery('.page.page--house .house-subheader .property-address').text(jQuery("meta[name='description']").attr('content').replace(' Auckland New Zealand, Auckland', '.'));
+				
 			} catch (ex) {
 				debugger;
 			}
+
 		})(jQuery);		
 	}
 });
