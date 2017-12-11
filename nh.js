@@ -17,7 +17,7 @@ domready(function() {
 		}
 	}
 
-	jQuery(".featuredproperties .col-md-4").removeClass('col-md-4').addClass('col-md-6');	
+    jQuery(".featuredproperties .col-md-4").removeClass('col-md-4').addClass('col-md-6').appendTo('.featured-properties__grid:first()');
 	jQuery(".main-bg > .row:nth-child(4) .col-md-2").addClass("col-sm-5 col-xs-5 col-md-4").removeClass('col-md-2');
 
 	var timer = null;
