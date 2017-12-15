@@ -10,7 +10,7 @@ var querystring={parse:function(a){var b={};if(a=void 0!==a?a:window.location.se
 
 var qs = querystring.parse();
 
-jQuery('#FormModel_Values_RESPONSE_CODE_').val('ResponseCode')
-jQuery('#FormModel_Values_RESPONSE_TEXT_').val('ResponseText')
-jQuery('#FormModel_Values_RESULT_KEY_').val('ResultKey')
+jQuery('#FormModel_Values_RESPONSE_CODE_').val(qs.ResponseCode);
+jQuery('#FormModel_Values_RESPONSE_TEXT_').val(qs.ResponseText);
+jQuery('#FormModel_Values_RESULT_KEY_').val(qs.ResultKey);
 jQuery('input.button.submit').click();
