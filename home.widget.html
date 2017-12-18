@@ -36,12 +36,17 @@ domready(function() {
 			slideshow: true,
 			smoothHeight: true,
 			start: function(){
-			$('.testimonials').children('li').css({
-				'opacity': 1,
-				'position': 'relative'
-			});
+				$('.testimonials').children('li').css({
+					'opacity': 1,
+					'position': 'relative'
+				});
 			}
 		});
+
+		jQuery.getScript("https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.js", function() {
+			jQuery('.featuredproperties .featured .title').fitText();
+			console.log('moo');
+		})
 	} );
 });
 </script>
