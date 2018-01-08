@@ -140,8 +140,11 @@ domready(function() {
 
 					return retval;
 				}
-
-				jQuery('.page.page--house .house-subheader .property-address').text(jQuery("meta[name='description']").attr('content').replace(' Auckland New Zealand, Auckland', ''));
+				
+				var content = jQuery("meta[name='description']").attr('content');
+				if(content) {
+					jQuery('.page.page--house .house-subheader .property-address').text(content.replace(' Auckland New Zealand, Auckland', ''));
+				}
 				
 			} catch (ex) {
 				debugger;
