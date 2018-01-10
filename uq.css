@@ -247,6 +247,11 @@ body.page--homepage #main-slideshow .carousel-caption {
 	left: 7px;
 }
 
+.page--house .fotorama {
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+}
+
 .page--house .fotorama__stage:after {
   background: none;
 }
